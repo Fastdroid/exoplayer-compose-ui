@@ -1,7 +1,8 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("kotlin-android-extensions")
+    id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -56,9 +57,9 @@ dependencies {
     implementation("androidx.compose.material:material:${Versions.compose}")
     implementation("androidx.compose.ui:ui-tooling:${Versions.compose}")
     implementation("androidx.compose.material:material-icons-extended:${Versions.compose}")
-    implementation("dev.chrisbanes.accompanist:accompanist-coil:0.6.0")
+    implementation("dev.chrisbanes.accompanist:accompanist-coil:0.6.2")
     implementation("androidx.activity:activity-compose:${Versions.compose}")
-    implementation("com.google.code.gson:gson:2.8.6")
+    implementation("com.google.code.gson:gson:2.8.7")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.2")

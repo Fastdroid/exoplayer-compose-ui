@@ -1,7 +1,8 @@
 plugins {
     id("com.android.library")
     id("kotlin-android")
-    id("kotlin-android-extensions")
+    id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -61,7 +62,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.3.0")
     implementation("androidx.activity:activity-ktx:1.3.0")
     implementation("androidx.core:core-ktx:1.6.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1-native-mt")
 
     implementation("com.google.android.exoplayer:exoplayer:2.13.3")
 
